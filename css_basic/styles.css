@@ -1,0 +1,41 @@
+/* styles.css */
+
+/* Flexbox Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/* Flexbox for Article and Aside */
+article {
+    flex: 2;
+    overflow-y: auto; /* Enable scrolling */
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto; /* Enable scrolling */
+}
+
+/* Header and Footer */
+header, footer {
+    padding: 10px;
+    background-color: #f4f4f4;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Additional Styles */
+header h1 {
+    font-size: 24px;
+}
+
+footer p {
+    text-align: center;
+}
