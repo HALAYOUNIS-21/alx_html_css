@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     flex-direction: column;
@@ -13,24 +14,37 @@ main {
 article {
     flex: 2;
     overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    grid-column: 1 / 2;
 }
 
 aside {
     flex: 1;
     overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    grid-column: 2 / 3;
 }
 
 header, footer {
     padding: 10px;
     background-color: #f4f4f4;
     flex-shrink: 0; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 
 header h1 {
     font-size: 24px;
+    grid-column: 1 / span 2;
 }
 
 footer p {
     text-align: center;
+    grid-column: 1 / span 2;
 }
