@@ -11,8 +11,8 @@ The "Smile School" project is designed to showcase advanced HTML concepts and te
 - W3C validation and compliance
 
 ## Technologies Used
-- **HTML5**: For creating the structure of the webpage
-- **CSS3**: (Linked in the `index.html` file but not included in this snippet) for styling and layout
+- **HTML**: For creating the structure of the webpage
+- **CSS**: (Linked in the `index.html` file)
 - **Font Awesome**: For icons (loaded via a CDN)
 
 ## Requirements
