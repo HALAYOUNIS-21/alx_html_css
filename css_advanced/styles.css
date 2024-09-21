@@ -1,0 +1,49 @@
+/* Container for the custom layout */
+.custom-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Styling for the placeholder image */
+.placeholder-image {
+    width: 111.83px;
+    height: 12.58px;
+    position: absolute;
+    left: 55.18px;
+    top: 6.52px;
+}
+
+/* Common styling for white boxes */
+.white-box {
+    position: absolute;
+    background: white;
+}
+
+/* Positioning the first white box */
+.box1 {
+    width: 7.87px;
+    height: 11.85px;
+    left: 4.40px;
+    top: 0px;
+}
+
+/* Positioning the second white box */
+.box2 {
+    width: 7.87px;
+    height: 11.85px;
+    left: 23.12px;
+    top: 0px;
+}
+
+/* Styling and positioning the rotated box */
+.rotated-box {
+    width: 35.57px;
+    height: 8.87px;
+    position: absolute;
+    left: 0px;
+    top: 20.66px;
+    background: white;
+    transform: rotate(-7deg);
+    transform-origin: 0 0;
+}
