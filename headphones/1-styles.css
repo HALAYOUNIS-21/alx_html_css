@@ -243,76 +243,6 @@ p.o-p {
     word-wrap: break-word;
 }
 
-/*shape-container*/
-.shapes-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px; 
-    padding: 40px;
-    flex-wrap: wrap; /* Allows wrapping of items */
-    background-image: url('/Users/halayounis/Desktop/Study +ALX/ALX_course/headphones-images/headphones_hero_2.jpg'); 
-    background-size: cover; /* Make the background image cover the entire container */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-}
-.shapes-p{
-    width: 100%; 
-    text-align: center; 
-    color: white; 
-    font-size: 16px; 
-    font-weight: 400; 
-    line-height: 26px; 
-    word-wrap: break-word
-}
-.shapes{
-    display: flex;
-    justify-content: center;
-    gap: 40px; /* Space between items */
-    padding: 20px 0;
-}
-.s-c {
-    position: relative; /* Allows absolute positioning of children */
-    width: 190px; /* Adjust width as needed */
-    height: 190px; /* Adjust height as needed */
-    overflow: hidden; /* Ensures anything that goes outside this is hidden */
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center children vertically */
-    align-items: center; /* Center children horizontally */
-}
-
-.pentagone {
-    position: absolute; /* Position the image */
-    top: 0; /* Align to the top */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust to center */
-    width: 100%; /* Fill the entire container */
-    height: 100%; /* Fill the entire container */
-    z-index: 1; /* Send the image to the back */
-    gap: 20px;
-}
-
-.s-c h1, .s-c p {
-    position: relative; /* Position text inside the shape */
-    color: white; /* Text color */
-    text-align: center; /* Center align text */
-    z-index: 2; /* Ensure text is above the image */
-    margin: 0; /* Reset margin to avoid extra spacing */
-}
-
-.s-c h1 {
-    font-size: 46px; 
-    color: #FFF;
-    font-weight: 700; 
-    line-height: 1; /* Adjust line-height to reduce gap */
-}
-
-.s-c p {
-    font-size: 14px; 
-    font-weight: 400; 
-    line-height: 1.5; /* Control line-height for better spacing */
-    margin-top: 5px; /* Add a small margin if needed */
-}
 
 
 /* Media Queries for Responsiveness */
@@ -384,18 +314,4 @@ p.o-p {
         width: 100%; /* Full width for mobile */
         margin-bottom: 20px; /* Space between items */
     }
-}
-/*shapes for mobile Responsiveness */
-@media (max-width: 480px) {
-    .shapes-container {
-        flex-direction: column; /* Stack items vertically on mobile */
-        align-items: center; /* Center items horizontally */
-        padding: 20px; /* Adjust padding for mobile */
-    }
-    .shapes{
-        flex-direction: column; /* Stack items vertically on mobile */
-        align-items: center; /* Center items horizontally */
-    }
-
-
 }
