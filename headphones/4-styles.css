@@ -422,6 +422,55 @@ p.o-p {
     word-wrap: break-word;
 }
 
+/* Footer Styles */
+
+footer {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    background-color: #0B132B; /* Background color */
+    padding: 20px 40px; /* Padding around footer */
+    color: #fff; /* Default text color */
+}
+
+/* Main Footer Container */
+.footer-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Logo Styles */
+.footer-logo img {
+    height: 40px; /* Logo height */
+    max-width: 100%; /* Ensure responsiveness */
+}
+
+/* Social Icons Container */
+.footer-social-icons {
+    display: flex; /* Use flexbox for social icons */
+    align-items: center; /* Center icons vertically */
+}
+
+/* Individual Social Icons */
+.footer-social-icons i {
+    margin: 0 10px; /* Margin around icons */
+    font-size: 20px; /* Size of icons */
+    color: #FFF; /* Color for icons */
+}
+
+/* Footer Text */
+.footer-text {
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Margin for spacing */
+    color: rgba(255, 255, 255, 0.5); /* Adjust text color */
+    width: 100%; /* Take full width for text */
+}
+
+
+/* mobile and tablet view */ 
+
+
 /* Hero Content */
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
@@ -512,7 +561,7 @@ p.o-p {
         padding: 10px; /* Add padding to items */
     }
 }
-/* Our results */
+
 /* Our results */
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -636,5 +685,18 @@ p.o-p {
     .cta-text {
         height: 40px; /* Adjust height for mobile */
         border-radius: 15px; /* Adjust border radius for mobile */
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: row; /* Maintain row layout on small screens */
+        justify-content: center; /* Center items */
+    }
+
+    .footer-text {
+        margin-top: 10px; /* Adjust spacing for mobile */
+        width: 100%; /* Ensure text takes full width */
+        text-align: center; /* Center text */
     }
 }
