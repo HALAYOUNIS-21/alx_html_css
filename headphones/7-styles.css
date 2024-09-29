@@ -253,61 +253,107 @@ p.o-p {
     word-wrap: break-word;
 }
 
+.wwd .o {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8; /* Slightly transparent */
+}
+
+.wwd .o:hover {
+    transform: scale(1.1) rotate(3deg); /* Scale up and rotate */
+    opacity: 1; /* Fully opaque */
+}
 
 
 /* Our Results Section */
-
-.pentagon-s-container {
-    display: flex; /* Flexbox layout for the container */
+.shapes-container {
+    display: flex;
     flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align items */
-    padding: 70px; /* Padding for the container */
+    align-items: center; /* Center items */
+    gap: 40px; 
+    padding: 40px;
     background-image: url('/Users/halayounis/Desktop/Study +ALX/ALX_course/headphones-images/headphones_hero_2.jpg'); 
-
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
 }
 
-.pentagon-content {
-    text-align: center; /* Center align text */
-    margin-bottom: 20px; /* Space between content and pentagons */
-    
+/* Description Paragraph */
+.shape-content {
+    text-align: center; /* Center text */
 }
 
 .shapes-p {
-    font-size: 16px; /* Font size for paragraph */
-    color: #ffffff; /* Dark text color */
-    max-width: 800px; /* Limit max width for readability */
+    color: white;
+    font-size: 16px; /* Font size */
+    line-height: 1.5; /* Line height for readability */
+    max-width: 600px; /* Limit max width for better readability */
+    margin: 0; /* Reset margin */
 }
 
-.pentagon-container {
-    display: flex; /* Flexbox for pentagon layout */
-    justify-content: center; /* Center align pentagons */
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    gap: 20px; /* Space between pentagons */
+/* Shapes Container */
+.shapes {
+    display: flex;
+    justify-content: center; /* Center shapes */
+    gap: 20px; /* Space between shapes */
+    flex-wrap: wrap; /* Allow items to wrap */
 }
 
-.pentagon {
-    width: 150px; /* Fixed width for pentagons */
-    height: 150px; /* Fixed height for pentagons */
-    background-color: #FF6565; /* Background color for pentagons */
+/* Individual Shape Container */
+.s-c {
+    position: relative; /* Allows absolute positioning of children */
+    width: 190px; /* Fixed width */
+    height: 190px; /* Fixed height */
+    overflow: hidden; /* Ensure overflow is hidden */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+/* Pentagon Shape Image */
+.pentagone {
+    position: absolute; /* Position the image */
+    top: 0; /* Align to the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center */
+    width: 100%; /* Fill the entire container */
+    height: 100%; /* Fill the entire container */
+    z-index: 1; /* Send the image to the back */
+}
+
+/* Heading and Paragraph inside Shape */
+.s-c h1, .s-c p {
+    position: relative; /* Position text inside the shape */
     color: white; /* Text color */
-    display: flex; /* Use flexbox for centering text */
-    flex-direction: column; /* Stack heading and paragraph vertically */
-    justify-content: center; /* Center text vertically */
-    align-items: center; /* Center text horizontally */
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); /* Pentagon shape */
-    position: relative; /* Allows absolute positioning for text if needed */
+    text-align: center; /* Center align text */
+    z-index: 2; /* Ensure text is above the image */
+    margin: 0; /* Reset margin to avoid extra spacing */
 }
 
-.h1-pen, .s-c-h1 {
-    margin: 0; /* Remove default margin */
-    font-size: 24px; /* Font size for headings */
-    font-weight: bold; /* Bold text for emphasis */
+/* Heading Styles */
+.s-c-h1 {
+    font-size: 24px; /* Adjust heading size */
+    color: #FFF;
+    font-weight: 700; 
 }
 
-.p-pen, .s-c-p {
-    margin: 5px 0 0; /* Margin for paragraph */
-    font-size: 14px; /* Font size for description */
+/* Paragraph Styles */
+.s-c-p {
+    font-size: 14px; /* Adjust font size */
+    font-weight: 400; 
+    line-height: 1.5; /* Control line-height for better spacing */
+    margin-top: 5px; /* Add a small margin if needed */
 }
+.shapes-container .s-c {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8; /* Slightly transparent */
+}
+
+.shapes-container .s-c:hover {
+    transform: translateY(-10px) scale(1.1); /* Move up and scale */
+    opacity: 1; /* Fully opaque */
+}
+
 
 /* Contact Section Styles */
 .contact-section-wrapper {
@@ -538,15 +584,57 @@ footer {
 /* Our results */
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .pentagon {
-        width: 120px; /* Adjust width for smaller screens */
-        height: 120px; /* Adjust height for smaller screens */
+    .shapes-container {
+        padding: 20px; /* Reduce padding */
     }
 
-    .shapes-p {
-        font-size: 14px; /* Adjust font size for paragraph on mobile */
+    .shapes {
+        flex-direction: column; /* Stack shapes vertically */
+        gap: 20px; /* Space between items */
+        align-items: center; /* Center items */
+    }
+
+    .s-c {
+        position: relative; /* Allows for absolute positioning of children */
+        width: 190px; /* Fixed width for pentagons */
+        height: 190px; /* Fixed height for pentagons */
+        overflow: hidden; /* Ensure overflow is hidden */
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center children horizontally */
+        align-items: center; /* Center children vertically */
+        margin: 0 auto; /* Center the shape container */
+    }
+
+    .pentagone {
+        width: 100%; /* Fill the entire container */
+        height: 100%; /* Maintain pentagon size */
+        object-fit: cover; /* Ensure the image covers the container without distortion */
+    }
+
+    /* Ensure text stays on top of the pentagon */
+    .s-c h1 {
+        position: absolute; /* Position heading absolutely */
+        color: white; /* Text color */
+        text-align: center; /* Center align text */
+        margin: 0; /* Reset margin to avoid extra spacing */
+        z-index: 2; /* Ensure text is above the image */
+        width: 100%; /* Make text width full */
+        top: 30%; /* Position it down the pentagon */
+    }
+
+    .s-c p {
+        position: absolute; /* Position text absolutely */
+        color: white; /* Text color */
+        text-align: center; /* Center align text */
+        margin: 0; /* Reset margin to avoid extra spacing */
+        z-index: 2; /* Ensure text is above the image */
+        width: 100%; /* Make text width full */
+        top: 60%; /* Position it lower than the heading */
+        font-size: 12px; /* Adjust font size */
+        line-height: 1.5; /* Control line-height for better spacing */
     }
 }
+
 /* Contact Section */
 @media (min-width: 769px) and (max-width: 1024px) {
     .contact-section {
