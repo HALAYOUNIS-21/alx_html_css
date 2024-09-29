@@ -1,0 +1,635 @@
+/* Reset CSS - Eric Meyer's Reset CSS v2.0 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box; 
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif; 
+    background-color: #FFF;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 80%; 
+    z-index: 1000; 
+}
+
+.logo-burger-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    display: inline-block;
+}
+
+.logo-dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    left: 50px; 
+    top: 13px; 
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.burger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.nav-links:hover {
+    color: #FF6565;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('/Users/halayounis/Desktop/Study +ALX/ALX_course/headphones-images/headphones_hero_1.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+/* Hero Content */
+.hero-content {
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+h1.title {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+h2.sub {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+p.description {
+    width: 637px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    word-wrap: break-word;
+    margin-top: 20px;
+}
+
+/* Container Styling */
+.hero-cta-container {
+    display: flex; 
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center; /* Centers the button vertically */
+    height: 100%; /* Adjust as needed based on your hero section */
+    padding: 20px; /* Adjust padding to add space around the button */
+}
+
+/* CTA Button Styling */
+.cta-button {
+    background-color: #FF6565; /* Button color */
+    color: white; /* Text color */
+    padding: 12px 24px; /* Adjust padding for size */
+    border-radius: 22px; /* Rounded corners */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer; /* Changes cursor to pointer when hovering */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.cta-button:hover {
+    background-color: #e54d4d; /* Slightly darker shade on hover */
+}
+
+/* WWD Section */
+
+
+.wwd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 60px;
+}
+
+.intro-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 40px; /* Adjust padding as needed */
+}
+
+h1 {
+    text-align: center; 
+    color: #071629; 
+    font-size: 32px;  
+    font-weight: 600; 
+    word-wrap: break-word;
+}
+
+p {
+    width: 637px;
+    text-align: center;
+    color:#071629;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    word-wrap: break-word;
+    margin-top: 20px;
+}
+
+.o-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    padding: 40px;
+    flex-wrap: wrap; /* Allows wrapping of items */
+}
+
+
+.o {
+    width: 207px; /* Fixed width for desktop */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: auto; /* Change to auto to accommodate content */
+    background-color: white; 
+}
+
+p.o-p {
+    width: 100%; 
+    text-align: center; 
+    color: #071629; 
+    font-size: 14px;  
+    font-weight: 400; 
+    line-height: 26px; 
+    word-wrap: break-word;
+}
+
+
+
+/* Our Results Section */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Default font for the body */
+    background-color: #f0f0f0; /* Light background color for contrast */
+}
+
+.pentagon-s-container {
+    display: flex; /* Flexbox layout for the container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Padding for the container */
+}
+
+.pentagon-content {
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Space between content and pentagons */
+}
+
+.shapes-p {
+    font-size: 16px; /* Font size for paragraph */
+    color: #333; /* Dark text color */
+    max-width: 800px; /* Limit max width for readability */
+}
+
+.pentagon-container {
+    display: flex; /* Flexbox for pentagon layout */
+    justify-content: center; /* Center align pentagons */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px; /* Space between pentagons */
+}
+
+.pentagon {
+    width: 150px; /* Fixed width for pentagons */
+    height: 150px; /* Fixed height for pentagons */
+    background-color: #0B132B; /* Background color for pentagons */
+    color: white; /* Text color */
+    display: flex; /* Use flexbox for centering text */
+    flex-direction: column; /* Stack heading and paragraph vertically */
+    justify-content: center; /* Center text vertically */
+    align-items: center; /* Center text horizontally */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); /* Pentagon shape */
+    position: relative; /* Allows absolute positioning for text if needed */
+}
+
+.h1-pen, .s-c-h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Font size for headings */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.p-pen, .s-c-p {
+    margin: 5px 0 0; /* Margin for paragraph */
+    font-size: 14px; /* Font size for description */
+}
+
+/* Contact Section Styles */
+.contact-section-wrapper {
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.contact-section {
+    width: 335px;
+    height: 373px;
+    position: relative;
+}
+
+.contact-header {
+    position: absolute;
+    left: 94px;
+    top: 0;
+    text-align: center;
+    color: #071629;
+    font-size: 32px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.input-group {
+    height: 29px;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.input-label {
+    color: #071629;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.input-line {
+    width: 335px;
+    height: 1px;
+    opacity: 0.17;
+    background: #071629;
+}
+
+.cta-container {
+    width: 162px;
+    height: 44px;
+    position: absolute;
+    left: 86px;
+    top: 329px;
+}
+
+.cta-background {
+    width: 162px;
+    height: 44px;
+    background: #FF6565;
+    border-radius: 22px;
+    position: absolute;
+}
+
+.cta-text {
+    position: absolute;
+    left: 31px;
+    top: 13px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+/* Footer Styles */
+
+footer {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    background-color: #0B132B; /* Background color */
+    padding: 20px 40px; /* Padding around footer */
+    color: #fff; /* Default text color */
+}
+
+/* Main Footer Container */
+.footer-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Logo Styles */
+.footer-logo img {
+    height: 40px; /* Logo height */
+    max-width: 100%; /* Ensure responsiveness */
+}
+
+/* Social Icons Container */
+.footer-social-icons {
+    display: flex; /* Use flexbox for social icons */
+    align-items: center; /* Center icons vertically */
+}
+
+/* Individual Social Icons */
+.footer-social-icons i {
+    margin: 0 10px; /* Margin around icons */
+    font-size: 20px; /* Size of icons */
+    color: #FFF; /* Color for icons */
+}
+
+/* Footer Text */
+.footer-text {
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Margin for spacing */
+    color: rgba(255, 255, 255, 0.5); /* Adjust text color */
+    width: 100%; /* Take full width for text */
+}
+
+
+/* mobile and tablet view */ 
+
+
+/* Hero Content */
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #000;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        border: 1px solid #333;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    /* Show the menu when the checkbox is checked */
+    #menu-toggle:checked + .burger-menu + .nav-links {
+        display: flex;
+    }
+
+    .title {
+        font-size: 2rem; 
+    }
+
+    .sub {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.9rem; 
+    }
+
+    .cta-button {
+        width: auto; 
+        padding: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1.title {
+        font-size: 1.5rem; 
+        width: 80%;
+    }
+
+    h2.sub {
+        font-size: 0.9rem; 
+        width: 80%;
+    }
+
+    p.description {
+        font-size: 0.8rem; 
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wwd {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 30px; /* Reduce gap for mobile */
+    }
+
+    .intro-content {
+        padding: 20px; /* Reduce padding */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust font size for mobile */
+    }
+
+    p {
+        width: 90%; /* Make paragraph width responsive */
+        font-size: 14px; /* Adjust font size for smaller screens */
+        line-height: 20px; /* Adjust line height */
+        margin-top: 15px; /* Adjust margin for mobile */
+    }
+
+    .o-container {
+        gap: 20px; /* Reduce gap for items in the container */
+    }
+
+    .o {
+        width: 100%; /* Full width for mobile */
+        max-width: 300px; /* Optional max-width to limit size */
+        padding: 10px; /* Add padding to items */
+    }
+}
+
+/* Our results */
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .pentagon {
+        width: 120px; /* Adjust width for smaller screens */
+        height: 120px; /* Adjust height for smaller screens */
+    }
+
+    .shapes-p {
+        font-size: 14px; /* Adjust font size for paragraph on mobile */
+    }
+}
+/* Contact Section */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-section {
+        width: auto; /* Keep original width */
+        height: auto; /* Adjust height for better fit */
+    }
+
+    .input-line {
+        width: auto; /* Keep original width for input lines */
+    }
+
+    .cta-container {
+        margin-top: 25px; /* Adjust margin for tablet */
+    }
+
+    .cta-background,
+    .cta-text {
+        height: auto; /* Keep original height */
+        border-radius: 18px; /* Maintain border radius for tablet */
+    }
+}
+
+/* Tablet View contact us*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-section {
+        width: 300px;
+        height: auto; /* Adjust height for better fit */
+    }
+    .input-line {
+        width: 300px; /* Adjust line width for smaller screens */
+    }
+    .cta-container {
+        margin-top: 25px; /* Adjust margin for tablet */
+    }
+    
+    .cta-background,
+    .cta-text {
+        height: 42px; /* Adjust height for tablet */
+        border-radius: 18px; /* Adjust border radius for tablet */
+    }
+}
+
+/* Mobile View contact us */
+@media (max-width: 768px) {
+    .contact-section {
+        width: 90%; /* Make the contact section fit the screen */
+        padding: 10px;
+    }
+
+    .contact-header {
+        font-size: 24px; /* Adjust font size for mobile */
+    }
+
+    .input-group {
+        left: 0; 
+        width: 100%;
+    }
+    
+    .input-line {
+        width: 100%; /* Make the input line take full width */
+    }
+    .cta-container {
+        margin-top: 20px; /* Adjust margin for mobile */
+    }
+    
+    .cta-background,
+    .cta-text {
+        height: 40px; /* Adjust height for mobile */
+        border-radius: 15px; /* Adjust border radius for mobile */
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: row; /* Maintain row layout on small screens */
+        justify-content: center; /* Center items */
+    }
+
+    .footer-text {
+        margin-top: 10px; /* Adjust spacing for mobile */
+        width: 100%; /* Ensure text takes full width */
+        text-align: center; /* Center text */
+    }
+}
