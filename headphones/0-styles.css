@@ -36,7 +36,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background-image: url('/Users/halayounis/Desktop/Study +ALX/ALX_course/headphones-images/headphones_hero_1.jpg'); /* Background image */
+    background-image: url('assets/headphones_hero_1.jpg'); /* Background image */
     background-size: cover; 
     background-position: center; 
     height: 100vh; 

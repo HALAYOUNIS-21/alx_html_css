@@ -107,7 +107,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background-image: url('/Users/halayounis/Desktop/Study +ALX/ALX_course/headphones-images/headphones_hero_1.jpg'); 
+    background-image: url('assets/headphones_hero_1.jpg'); 
     background-size: cover; 
     background-position: center; 
     height: 100vh; 
@@ -250,7 +250,7 @@ p.o-p {
     gap: 40px; 
     padding: 40px;
     flex-wrap: wrap; /* Allows wrapping of items */
-    background-image: url('/Users/halayounis/Desktop/Study +ALX/ALX_course/headphones-images/headphones_hero_2.jpg'); 
+    background-image: url('assets/headphones_hero_2.jpg'); 
     background-size: cover; /* Make the background image cover the entire container */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
